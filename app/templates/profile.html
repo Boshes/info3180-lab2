@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+
+
+{% block css %}
+<style>
+    .boxes{
+        border:1px solid black;
+        background-color:#ADD8E6;
+    }
+    img{
+        max-width:100%;
+    }
+    #pad{
+        padding-top:20px;
+    }
+</style>
+{% endblock %}
+
+{% block js %}
+{% endblock %}
+
+{% block main %}
+<div class="container" id="pad">
+    <div class="col-md-3">
+        <img src="/static/img/octocat.png">
+    </div>
+    <div class="col-md-9">
+        <div class="boxes">
+            <p>Justen Morgan</p>
+        </div>
+        <br>
+        <div class="boxes">
+            <p>Today is: {{time}}</p>
+        </div>
+        <div class="boxes">
+            <p> Username: JustenMorgan <br>
+                 ID: 620070138 <br>
+                 Sex: Male <br>
+                 Age: 10 <br>
+                 Highest Score: 9001 <br>
+                 TDollars: 123 <br>
+            </p>
+        </div>
+    </div>
+</div>
+{% endblock %}
